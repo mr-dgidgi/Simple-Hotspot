@@ -1,5 +1,5 @@
 # Simple-Hotspot
-Docker image to create a basic hotspot on Raspberry Pi
+Docker image to create a basic hotspot on Debian
 
 Container created for my Recoverybox Project : https://github.com/mr-dgidgi/RecoveryBox
 
