@@ -1,4 +1,4 @@
-# Simple-Pi-Hotspot
+# Simple-Hotspot
 Docker image to create a basic hotspot on Raspberry Pi
 
 Container created for my Recoverybox Project : https://github.com/mr-dgidgi/RecoveryBox
@@ -27,11 +27,11 @@ sudo systemctl disable wpa_supplicant
 ```
 4. build the image
 ```shell
-sudo docker build -t mrdgidgi/simple-pi-hotspot .
+sudo docker build -t mrdgidgi/simple-hotspot .
 ```
 3. run the container
 ```shell
-docker run --rm --net=host --cap-add=NET_ADMIN --cap-add=NET_RAW --privileged mrdgidgi/simple-pi-hotspot
+docker run --rm --net=host --cap-add=NET_ADMIN --cap-add=NET_RAW --privileged mrdgidgi/simple-hotspot
 ```
 
 ## Customization
@@ -45,7 +45,7 @@ Create hostapd.conf and dnsmasq.conf with your custom configuration in /etc/ap_c
 
 3. Run the container
 ```shell
-docker run --rm --net=host --cap-add=NET_ADMIN --cap-add=NET_RAW --privileged -v /etc/ap_config/:/etc/conf mrdgidgi/simple-pi-hotspot
+docker run --rm --net=host --cap-add=NET_ADMIN --cap-add=NET_RAW --privileged -v /etc/ap_config/:/etc/conf mrdgidgi/simple-hotspot
 ```
 
 
