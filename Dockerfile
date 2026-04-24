@@ -1,4 +1,4 @@
-FROM arm64v8/alpine:3.14
+FROM alpine:3.14
 
 
 ENV WLAN_INT=wlan0
